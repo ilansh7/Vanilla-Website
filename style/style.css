@@ -15,19 +15,10 @@ body {
 header {
     
 }
-#home {
-    width: 17px;
-    height: 15px;
-    padding: 0 2px;
-    /* left: 17px;
-    width: 17px;*/
-    background: url(../images/menu_home.png) -17px 0; 
-    border-right: initial;
-}
+
 nav {
     color: white;
     font-size: 0.8em;
-    text-decoration: none;
     /* width: 25%;
     float: left; */
 }
@@ -47,12 +38,24 @@ nav > ul, nav > ul > li {
 	/*width: 250px;*/
 }
 nav > ul > li.top-nav > a, nav > ul > li.dropdown > a {
-    width: 12.5%; /*120px*/
+    /*width: 13.5%; /*120px*/
+    width: auto;
+    padding: 0 0.6em;
     font-size: 1em;
     float: right;
     border-right: 2px solid #c0c0c0;
+    text-decoration: none;
+    color: whitesmoke;
     /*left: 20px;*/
     /*display: block;*/
+}
+nav > ul > li > a:hover, .dropdown:hover > a {
+	background-color: #000;
+    /* color: white; */
+}
+nav > ul > li.top-nav > a.home-icon {
+    /*width: 3.5%; /*120px*/
+    border-right: initial;
 }
 /*nav > ul > li.top-nav > a, nav > ul > li.dropdown > a {
     width: 8em; /*120px*/
@@ -75,10 +78,6 @@ nav > ul > li > a {
     /*background-color: #333;*/
     /*border-radius: 10%;* /
 }
-nav > ul > li > a:hover, .dropdown:hover > a {
-	background-color: #333;
-    /* color: white; * /
-}
 
 .dropdown {
     position: relative;
@@ -98,6 +97,53 @@ nav > ul > li > a:hover, .dropdown:hover > a {
     top: 0;
     width: inherit;
  } */
+
+.div-nav {
+    background-color:#909090;
+}
+.div-nav-logo {
+    float: right;
+    width: 12%;
+    /* background-image: url(../images/paz_logo.png); */
+}
+/* .div-nav-logo > a {
+    display: inline-block;
+    width: 120px; /*142px;* /
+    height: 78px; /*93px;* / 
+    position: relative;
+    bottom: -1em;
+    background: url(../images/paz_logo.png) no-repeat 0 0;
+    background-size: 100% 100%;
+} */
+.div-nav-logo > img {
+    display: inline-block;
+    width: 90%; /*142px;*/
+    height: 90%x; /*93px;*/ 
+    position: relative;
+    bottom: -1.25em;
+    /* background: url(../images/paz_logo.png) no-repeat 0 0;
+    background-size: 100% 100%; */
+}
+/* .div-nav-logo > img {
+    top: 10%
+}
+.div-nav-logo > a > img {
+    top: 10%
+} */
+.div-nav-content {
+    float: right;
+    width: 88%;
+}
+
+/* #home {
+    width: 17px;
+    height: 15px;
+    padding: 0 2px;
+    /* left: 17px;
+    width: 17px;* /
+    /* background: url(../images/menu_home.png) -17px 0;  * /
+    border-right: initial;
+} */
 
 main {
  width: 33.3%;
@@ -163,45 +209,11 @@ ol {
 li {
 
 }
-.div-nav {
-    background-color:#909090;
-}
-.div-nav-logo {
-    float: right;
-    width: 12%;
-    /* background-image: url(../images/paz_logo.png); */
-}
-/* .div-nav-logo > a {
-    display: inline-block;
-    width: 120px; /*142px;* /
-    height: 78px; /*93px;* / 
-    position: relative;
-    bottom: -1em;
-    background: url(../images/paz_logo.png) no-repeat 0 0;
-    background-size: 100% 100%;
-} */
-.div-nav-logo > img {
-    display: inline-block;
-    width: 90%; /*142px;*/
-    height: 90%x; /*93px;*/ 
-    position: relative;
-    bottom: -1.5em;
-    /* background: url(../images/paz_logo.png) no-repeat 0 0;
-    background-size: 100% 100%; */
-}
-/* .div-nav-logo > img {
-    top: 10%
-}
-.div-nav-logo > a > img {
-    top: 10%
-} */
-.div-nav-content {
-    float: right;
-    width: 88%;
-}
+
 
 .main-div {
     width: 100%;
+    padding-top: 1em;
 }
 
 .float-right {
