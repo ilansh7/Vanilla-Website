@@ -16,11 +16,13 @@ header {
     
 }
 #home {
-    /* width: 18px;
-    height: 18px; */
-    left: 17px;
     width: 17px;
-    background: url(../images/menu_home.png) -17px 0;
+    height: 15px;
+    padding: 0 2px;
+    /* left: 17px;
+    width: 17px;*/
+    background: url(../images/menu_home.png) -17px 0; 
+    border-right: initial;
 }
 nav {
     color: white;
