@@ -9,14 +9,20 @@
 body {
     text-align: center;
     font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     
 }
-
+#home {
+    /* width: 18px;
+    height: 18px; */
+    left: 17px;
+    width: 17px;
+    background: url(../images/menu_home.png) -17px 0;
+}
 nav {
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 0.8em;
     text-decoration: none;
@@ -92,11 +98,41 @@ nav > ul > li > a:hover, .dropdown:hover > a {
  } */
 
 main {
-
+ width: 33.3%;
+ float: right;
+ background-color: aqua;
 }
 
 section {
-
+    width: 33.3%;
+    float: right;
+    background-color: aquamarine;
+}
+.section-adv, .section-content {
+    position: relative;
+    z-index: 10;
+    padding: 0.1em;
+    /* float: right; */
+}
+.section-adv > img, .section-content > img {
+    display: inline-block;
+    width: 98%;
+    border-bottom-right-radius: 10%;
+}
+.content-text {
+    position: absolute;
+    padding: 0.5em;
+    width: 90%;
+    height: 25%;
+    right: 4%;
+    /* bottom: 84%; */
+    top: 70%;
+    color: #fff;
+    background-color: rgba(192, 192, 192, 0.6);
+    border-bottom-right-radius: 10%;
+    text-align: right;
+    font-size: 63%;
+    overflow: hidden;
 }
 
 footer {
@@ -105,6 +141,13 @@ footer {
 
 h1 {
 
+}
+h2 {
+
+}
+
+h3 {
+    /* font-size: 65%; */
 }
 
 ul {
@@ -123,17 +166,26 @@ li {
 }
 .div-nav-logo {
     float: right;
-    width: 15%;
+    width: 12%;
     /* background-image: url(../images/paz_logo.png); */
 }
-.div-nav-logo > a {
+/* .div-nav-logo > a {
     display: inline-block;
-    width: 120px; /*142px;*/
-    height: 78px; /*93px;*/ 
+    width: 120px; /*142px;* /
+    height: 78px; /*93px;* / 
     position: relative;
     bottom: -1em;
     background: url(../images/paz_logo.png) no-repeat 0 0;
-    background-size: 120px 78px;
+    background-size: 100% 100%;
+} */
+.div-nav-logo > img {
+    display: inline-block;
+    width: 90%; /*142px;*/
+    height: 90%x; /*93px;*/ 
+    position: relative;
+    bottom: -1.5em;
+    /* background: url(../images/paz_logo.png) no-repeat 0 0;
+    background-size: 100% 100%; */
 }
 /* .div-nav-logo > img {
     top: 10%
@@ -143,18 +195,23 @@ li {
 } */
 .div-nav-content {
     float: right;
-    width: 85%;
+    width: 88%;
 }
 
 .main-div {
     width: 100%;
 }
 
-.nav-right {
+.float-right {
 	float: right;
 }
-.nav-left {
+.float-left {
 	float: left;
+}
+
+.heb-text-justify {
+    /* text-align: justify; */
+    text-justify: inter-word;
 }
 
 .clearfix::after {
