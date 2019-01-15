@@ -72,30 +72,23 @@
                     <p class="float-left paz-retail-and-trade popup-paz-retail-and-trade"><a href="#">קרא עוד <i class="fa fa-arrow-alt-circle-left"></i></a></p>
                 </div>
                 <script type="text/javascript">
-                    // $('.popup-paz-retail-and-trade').on('click', function () {
-                    //     window.b = $.confirm({
-                    //         title: null,
-                    //         content: '<img src="images/pages/bdHerosParty.png"><p>לכל אחת מדמויות גיבור העל יש לנו בפליי דאנס יום הולדת מיוחדת...<br>סופרמן – גיבור העל הראשון והמפורסם ביותר. כוחו המופלג וכישרון הטיסה של הגיבור הם הבולטים ביותר בדמותו. חוגג היום הולדת יצא להציל את העולם ... כשחבריו כמובן לצידו. הרפתקה יוצאת דופן.<br>ספיידרמן – איש העכביש. במועדון הפליי דאנס הכל יכול לקרות... ילד היום הולדת הופך להיות ספיידרמן אמיתי ובעזרת הקורים והרבה עזרה מחבריו מציל את העולם.<br>באטמן – איש העטלף. ג&#39;וקר הרשע מאיים להרוס את כדור הארץ ומי אם לא באטמן וחבריו יוצאים להרפתקה לנצח את כוחות הרשע.</p>',
-                    //         confirmButtonClass: 'btn-primary',
-                    //         animation: 'rotateXR',
-                    //         animationClose: 'top',
-                    //         animationSpeed: 1500,
-                    //         confirmButton: null,
-                    //         keyboardEnabled: true,
-                    //         backgroundDismiss: true,
-                    //         rtl: true,
-                    //         cancelButtonClass: 'btn-info',
-                    //         cancelButton: 'סגירה'
-                    //     });
-                    // });
-
                     $('.popup-paz-retail-and-trade').on('click', function () {
                         window.b = $.confirm({
-                            title: 'Hello there',
-                            content: 'Drag this modal out of the window',
+                            useBootstrap: false,
+                            title: 'קמעונאות ומסחר',
+                            content: '<span style="text-justify: inter-word; text-align: right; float: right; background-color: lightskyblue; font-size: smaller;">רשת תחנות התדלוק של פז היא הגדולה בישראל, ומונה כ-275 תחנות תדלוק ברחבי הארץ. <br>מתוכן, כ-50 משמשות גם כמתחמים קמעונאיים ("פז סנטר"), ובכ- 235 מהן פועלות חנויות נוחות תחת המותג Yellow. <br>פעילות הקבוצה בתחנות התדלוק הציבוריות היא מתחומי העיסוק העיקריים של פז. <br>במתחמי התדלוק המודרניים של החברה, הממוקמים על הצירים הראשיים בישראל, נמכרים ללקוחות הקבוצה דלקים, שמנים, מוצרי מזון ושתייה, מוצרי פנאי ושירותים נלווים לנהג, ובהם שירותי גלישה באינטרנט אלחוטי, שירות משיכת מזומנים ועוד. <br>במקביל ממשיכה החברה במהלך התרחבות והעמקה של פעילות המסחר הקמעונאי במתחמי התדלוק, ובתוך כך מפתחת את חנויות הנוחות תחת המותג Yellow במטרה להרחיב את מגוון המוצרים הנמכרים בהן ולספק לצרכנים חוויית קנייה יוצאת דופן. <br>פז, כחברת הדלק הגדולה בישראל, מובילה את שוק קמעונאות הדרכים בזכות מותג חזק ומוכר לכל, זמינות מסביב לשעון ובכל מקום, ושיטות תפעול ממוחשבות, מתקדמות ויעילות.</span>',
                             draggable: true,
                             dragWindowBorder: false,
                             dragWindowGap: 0, // number of px of distance
+                            columnClass: 'col-md-8',
+                            closeIcon: true,
+                            //rtl: true,
+                            alignMiddle: true,
+                            buttons: {
+                                heyThere: {
+                                    isHidden: true, // initially not hidden
+                                }
+                            },
                         });
                     });
                 </script>
@@ -133,11 +126,38 @@
             <img src="images/paz-adv-sufersal-card.jpg" alt="paz sufersal card">
             <div class="div-spacer-10"></div>
             <div class="div-adv-expand">
-                <p class="float-left paz-adv-sufersal-card"><a href="#">קרא עוד <i class="fa fa-arrow-alt-circle-left"></i></a></p>
+                <p class="float-left paz-adv-sufersal-card"><a href="#">לפרטים נוספים <i class="fa fa-arrow-alt-circle-left"></i></a></p>
             </div>
-    </section>
-        <section class="section-adv">Section</section>
-        <section class="section-adv">Section</section>
+        </section>
+        <section class="section-adv">
+            <h3>Yellow click&pick</h3>
+            <hr>
+            <div class="div-spacer-10"></div>
+            <img src="images/paz-adv-yellow-click-pick.jpg" alt="paz yellow click and pick">
+            <div class="div-spacer-10"></div>
+            <div class="div-adv-expand">
+                <p class="float-left paz-adv-yellow-click-pick"><a href="#">לפרטים נוספים <i class="fa fa-arrow-alt-circle-left"></i></a></p>
+            </div>
+        </section>
+        <section class="section-adv adv-paz-stations">
+            <h3>התחנות שלנו בדרך שלך</h3>
+            <hr>
+            <div class="div-spacer-10"></div>
+            <div class="float-left">
+            <img src="images/paz-stations.jpg" alt="paz stations">
+            </div>
+            <div class="div-spacer-10"></div>
+            <div class="float-right">
+            <div class="div-adv-expand">
+                <ul>
+                    <li>צפןו</li>
+                    <li>מרכז</li>
+                    <li>דרום</li>
+                </ul>
+                <p class="float-left paz-stations"><a href="#">לפרטים נוספים <i class="fa fa-arrow-alt-circle-left"></i></a></p>
+            </div>
+            </div>
+        </section>
     </div>
     <div class="clearfix"></div>
     <footer>Footer</footer>
