@@ -18,15 +18,22 @@ header {
 
 nav {
     color: white;
-    font-size: 0.8em;
+    font-size: 0.7em;
     /* width: 25%;
     float: left; */
 }
-nav.main-nav {
+nav.main-nav, nav.footer-nav {
     width: 100%;
     float: right;
+}
+nav.main-nav {
     padding: 1em;
     margin-top: 0.8em;
+}
+nav.footer-nav {
+    padding: 0.25em 3em;
+    font-size: 60%;
+    /* margin-bottom: 0.8em; */
 }
 nav > ul {
 	padding: 0;
@@ -57,11 +64,15 @@ nav > ul > li.nav-active > a {
 	background-color: lightseagreen;
 	color: black;
 }
-/*nav > ul > li.top-nav > a.home-icon {
-    /*width: 3.5%; /*120px* /
+nav > ul > li.nav-icon > a, nav > ul > li.fb-icon > a {
+    /*width: 3.5%; /*120px*/
     border-right: initial;
 }
-nav > ul > li.top-nav > a, nav > ul > li.dropdown > a {
+nav > ul > li.fb-icon > a {
+    margin-top: 0.25em;
+    margin-left: 0.4em;
+}
+/*nav > ul > li.top-nav > a, nav > ul > li.dropdown > a {
     width: 8em; /*120px*/
     /* font-size: 1em; */
     /*left: 20px;*/
@@ -98,7 +109,7 @@ nav > ul > li > a {
     width: inherit;
  } */
 
-.div-nav {
+.div-nav, .div-footetr-nav {
     background-color:#909090;
 }
 .div-nav-logo {
@@ -135,15 +146,12 @@ nav > ul > li > a {
     width: 88%;
 }
 
-/* #home {
-    width: 17px;
-    height: 15px;
-    padding: 0 2px;
-    /* left: 17px;
-    width: 17px;* /
-    /* background: url(../images/menu_home.png) -17px 0;  * /
+.icon-facebook {
+    width: 18px;
+    height: 18px;
+    background: url(../images/fb_icon.png) no-repeat 0 0; 
     border-right: initial;
-} */
+}
 
 main {
     width: 33.3%;
@@ -185,7 +193,7 @@ section {
     background-color: rgba(192, 192, 192, 0.6);
     border-bottom-right-radius: 10%;
     text-align: right;
-    font-size: 60%;
+    font-size: 50%;
     overflow: hidden;
 }
 .section-adv {
