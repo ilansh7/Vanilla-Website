@@ -5,13 +5,18 @@
     <link rel="stylesheet" href="style/style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/paz_logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    
     <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
     <title>Vanilla Website</title>
 </head>
 
 <body>
     <header>
-        <h1>WebApp Course 12/2018 : Mid Exercise - Building a Vanilla Website</h1> <!-- alert(obj.a(5)) -->
+        <h1>WebApp Course 12/2018 : Vanilla Website</h1> <!-- alert(obj.a(5)) -->
     </header>
     <div class="div-nav clearfix">
         <div class="div-nav-logo">
@@ -62,22 +67,79 @@
             <div class="content-text">
                 <h3>קמעונאות ומסחר</h3>
                 <p class="heb-text-justify">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</p>
-                <p class="float-left-one"><a href="#">קרא עוד <i class="fa fa-5x fa-arrow-alt-circle-left"></i></a></p>
+                <div class="div-spacer-10"></div>
+                <div class="div-content-expand">
+                    <p class="float-left paz-retail-and-trade popup-paz-retail-and-trade"><a href="#">קרא עוד <i class="fa fa-arrow-alt-circle-left"></i></a></p>
+                </div>
+                <script type="text/javascript">
+                    // $('.popup-paz-retail-and-trade').on('click', function () {
+                    //     window.b = $.confirm({
+                    //         title: null,
+                    //         content: '<img src="images/pages/bdHerosParty.png"><p>לכל אחת מדמויות גיבור העל יש לנו בפליי דאנס יום הולדת מיוחדת...<br>סופרמן – גיבור העל הראשון והמפורסם ביותר. כוחו המופלג וכישרון הטיסה של הגיבור הם הבולטים ביותר בדמותו. חוגג היום הולדת יצא להציל את העולם ... כשחבריו כמובן לצידו. הרפתקה יוצאת דופן.<br>ספיידרמן – איש העכביש. במועדון הפליי דאנס הכל יכול לקרות... ילד היום הולדת הופך להיות ספיידרמן אמיתי ובעזרת הקורים והרבה עזרה מחבריו מציל את העולם.<br>באטמן – איש העטלף. ג&#39;וקר הרשע מאיים להרוס את כדור הארץ ומי אם לא באטמן וחבריו יוצאים להרפתקה לנצח את כוחות הרשע.</p>',
+                    //         confirmButtonClass: 'btn-primary',
+                    //         animation: 'rotateXR',
+                    //         animationClose: 'top',
+                    //         animationSpeed: 1500,
+                    //         confirmButton: null,
+                    //         keyboardEnabled: true,
+                    //         backgroundDismiss: true,
+                    //         rtl: true,
+                    //         cancelButtonClass: 'btn-info',
+                    //         cancelButton: 'סגירה'
+                    //     });
+                    // });
+
+                    $('.popup-paz-retail-and-trade').on('click', function () {
+                        window.b = $.confirm({
+                            title: 'Hello there',
+                            content: 'Drag this modal out of the window',
+                            draggable: true,
+                            dragWindowBorder: false,
+                            dragWindowGap: 0, // number of px of distance
+                        });
+                    });
+                </script>
             </div>
         </main>
         <section class="section-content">
             <img src="images/paz-refining.jpg" alt="paz refining">
+            <div class="content-text">
+                <h3>זיקוק</h3>
+                <p class="heb-text-justify">פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...</p>
+                <div class="div-spacer-10"></div>
+                <div class="div-content-expand">
+                    <p class="float-left paz-refining"><a href="#">קרא עוד <i class="fa fa-arrow-alt-circle-left"></i></a></p>
+                </div>
+            </div>
         </section>
         <section class="section-content">
-                <img src="images/paz-industries-and-services.jpg" alt="pas industries and services">
+            <img src="images/paz-industries-and-services.jpg" alt="paz industries and services">
+            <div class="content-text">
+                <h3>תעשיות ושירותים</h3>
+                <p class="heb-text-justify">תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...</p>
+                <div class="div-spacer-10"></div>
+                <div class="div-content-expand">
+                    <p class="float-left paz-industries-and-services"><a href="#">קרא עוד <i class="fa fa-arrow-alt-circle-left"></i></a></p>
+                </div>
+            </div>
         </section>
     </div>
     <div class="clearfix"></div>
     <div class="main-div">
-                <section class="section-adv">Section</section>
+        <section class="section-adv">
+            <h3>כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
+            <hr>
+            <div class="div-spacer-10"></div>
+            <img src="images/paz-adv-sufersal-card.jpg" alt="paz sufersal card">
+            <div class="div-spacer-10"></div>
+            <div class="div-adv-expand">
+                <p class="float-left paz-adv-sufersal-card"><a href="#">קרא עוד <i class="fa fa-arrow-alt-circle-left"></i></a></p>
+            </div>
+    </section>
         <section class="section-adv">Section</section>
         <section class="section-adv">Section</section>
     </div>
+    <div class="clearfix"></div>
     <footer>Footer</footer>
 </body>
 
