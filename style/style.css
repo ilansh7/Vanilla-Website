@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
     max-width: 1280px;
-    /* border: 1px solid gold; */
+    border: 1px solid gold;
 	direction: rtl;
 }
 body {
@@ -24,7 +24,6 @@ nav {
 }
 nav.main-nav, nav.footer-nav {
     width: 100%;
-    float: right;
 }
 nav.main-nav {
     padding: 1em;
@@ -113,7 +112,6 @@ nav > ul > li > a {
     background-color:#909090;
 }
 .div-nav-logo {
-    float: right;
     width: 12%;
     /* background-image: url(../images/paz_logo.png); */
 }
@@ -142,7 +140,6 @@ nav > ul > li > a {
     top: 10%
 } */
 .div-nav-content {
-    float: right;
     width: 88%;
 }
 
@@ -154,21 +151,16 @@ nav > ul > li > a {
 }
 
 main {
-    width: 33.3%;
-    float: right;
     /* background-color: aqua; */
 }
 
 section {
-    width: 33.3%;
-    float: right;
     /* background-color: aquamarine; */
 }
 .section-adv, .section-content {
     position: relative;
     z-index: 10;
     padding: 0.1em;
-    /* float: right; */
 }
 .section-adv > img, .section-content > img {
     display: inline-table;
@@ -202,10 +194,8 @@ section {
     padding: 0.3em 0.1em;
     border: 2px solid rgb(224,224,224);
     border-top-right-radius: 10%;
-    /* float: right; */
     font-size: 65%;
-    margin: 0.3em;
-    width: 32%;
+    margin: 0.45em;
 }
 .section-adv > h3 {
     padding: 0.5em;
@@ -229,7 +219,8 @@ h2 {
 }
 
 h3 {
-    /* font-size: 65%; */
+    font-size: 75%;
+    display: block;
 }
 
 ul {
@@ -287,17 +278,148 @@ p.float-left {
     background-color: brown;
 }
 .div-adv-paz-stations {
-    width: 50%;
+
 }
 
-
-
-
+.contact-form {
+    /* background-color: rgba(192, 192, 192, 0.6); */
+    border: 2px solid rgb(224,224,224);
+    border-top-right-radius: 10%;
+    text-align: right;
+}
+.contact-form > p {
+    font-size: 60%;
+}
 
 .main-div {
     width: 100%;
     padding-top: 1em;
 }
+
+.form-frame {
+    /* border: 2px solid black;
+    background-color: bisque; */
+    width: 70%;
+    font-size: 60%;
+    height: auto;
+    /* display: inline; */
+}
+.row-frame > label {
+    float: right;
+    /* justify-items: right; */
+    margin: 0.15em 0.3em;
+    padding: 0.15em 0 0 0.3em;
+    /* display: inline-block;  */
+    width: 28%;
+    background-color: rgb(220, 233, 229);
+}
+.row-frame > input,  {
+    float: left;
+    justify-items: left;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="tel"],
+textarea {
+/* input[type="number"], input[type="range"], input[type="file"], 
+input[type="hidden"], input[type="email"], 
+, progress, input[type="email"]  { */ 
+    margin: 2px 5px;
+    padding: 2px 0 0 5px;
+    width: 67%;
+}
+input[type="button"], input[type="submit"] {
+    margin: 0.6em 1.25em 0.6em 0;
+    padding: 0.3em;
+    width: 5em;
+    border-radius: 0.25em;
+    float: left;
+}
+textarea {
+    font-family: inherit;
+}
+/*
+input[type="checkbox"], input[type="radio"] {
+    margin: 10px 5px;
+    padding: 2px 0 2px 5px;
+    width: 15%;
+}
+*/
+input:invalid {
+    background-color: lightpink;
+}
+
+input:valid {
+    border: 1px solid aquamarine;
+}
+
+.astrix {
+    color: red;
+    font-weight: bold;
+}
+
+label {
+    user-select: none;
+}
+label.column {
+    /* width: 35%;
+    float: left; */
+}
+
+#cbLabel #rbLabel {
+    margin: initial;
+}
+
+
+.fieldset {
+     margin: 5px;
+ }
+
+.row-frame {
+    padding: 10px;
+    display: block;
+ }
+
+.column {
+     float: left;
+
+ }
+ /* .column::after {
+    content: "";
+    clear: both;
+    display: table;
+ } */
+
+.hidden {
+     display: none;
+ }
+.left-float {
+     /* align: right; */
+     text-align: left;
+ }
+ .narrow-padding {
+     margin: 0;
+ }
+ /* fieldset { border:1px solid green }
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid green;
+  color:green;
+  font-size:90%;
+  text-align:right;
+  } */
+
+ /* input[type="text"].column {
+    width: 65%;
+*/
+
+
+
+
+
+
+
 
 .float-right {
 	float: right;
@@ -326,6 +448,19 @@ p.float-left {
     width: 10%;
     height: 1.5em;
     display: block;
+}
+
+.col-wd-50 {
+    width: 50%;
+}
+.col-wd-33-3 {
+    width: 33.3%;
+}
+.col-wd-33 {
+    width: 33%;
+}
+.col-wd-32 {
+    width: 32%;
 }
 
 .clearfix::after {

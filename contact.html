@@ -20,14 +20,14 @@
         <h1>Vanilla Website : Contact Page</h1> <!-- alert(obj.a(5)) -->
     </header>
     <div class="div-nav clearfix">
-        <div class="div-nav-logo">
+        <div class="div-nav-logo float-right">
             <img src="images/paz_logo.png" alt="paz logo">
             <!-- <a class="logo-imag" href="#">
                 <img src="images/paz_logo.png" alt="paz logo">
             </a> -->
         </div>
-        <div class="div-nav-content">
-            <nav class="main-nav">
+        <div class="div-nav-content float-right">
+            <nav class="main-nav float-right">
                 <ul>
                     <li class="top-nav nav-icon"><a href="index.html"><i class="fa fa-fw fa-home"></i></a></li>
                     <li class="top-nav"><a href="about.html">אודות</a></li>
@@ -41,11 +41,61 @@
             </nav>
         </div>
     </div>
-    <div class="main-div">Main Div</div>
+    <div class="clearfix"></div>
+    <div class="main-div">
+        <section class="section-content float-left col-wd-50">
+            lchxgxdggxdfgfdgdfgdfgdfgd
+            <div class="content-text">
+                קמעונאות ומסחר
+            </div>
+        </section>
+        <section class="section-content contact-form float-right col-wd-50">
+            <h3 class="float-right1">צור קשר</h3>
+            <p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</p>
+            <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
+            <form class="form-frame clearfix">
+                <div class="row-frame clearfix">
+                    <label class="column" for="fName"><span class="astrix">&nbsp;*&nbsp;</span>שם פרטי :</label>
+                    <input class="column" type="text" name="fName" id="fName" required>
+                </div>
+                <div class="row-frame clearfix">
+                    <label class="column" for="lName"><span class="astrix">&nbsp;*&nbsp;</span>שם משפחה :</label>
+                    <input class="column" type="text" name="lName" id="lName" required>
+                </div>
+                <div class="row-frame clearfix">
+                    <label class="column" for="phone"><span class="astrix">&nbsp;*&nbsp;</span>טלפון :</label>
+                    <input class="column" type="tel" name="phone" id="phone" required>
+                </div>
+                <div class="row-frame clearfix">
+                    <label class="column" for="mail"><span class="astrix">&nbsp;*&nbsp;</span>דוא"ל :</label>
+                    <input class="column" type="email" name="mail" id="mail" required>
+                </div>
+                <div class="row-frame clearfix">
+                    <!-- <label class="column" for="textarea">TextArea :</label> -->
+                    <textarea class="column" name="msg" id="msg" rows="8" placeholder="תוכן הפניה"></textarea>
+                </div>
+                <!-- <div class="row-frame">
+                    <label class="column" for="address">Address:</label>
+                    <input class="column" type="text" name="address" id="address">
+                </div> -->
+                <!--<div class="row-frame hidden">
+                        <label class="column" for="hidden">Hidden :</label> 
+                    <input class="column" type="hidden" name="hidden" id="hidden" value="123456">
+                </div>
+                <div class="row-frame hidden">
+                    <label class="column" for="hidden">Hidden :</label>
+                    <input class="column" type="hidden" name="hidden" id="hidden" value="123456">
+                </div>-->
+                <div class="row-frame">
+                    <input type="submit" class="float-left" value="Send">
+                </div>
+            </form>
+        </section>
+    </div>
     <div class="clearfix"></div>
     <footer>
         <div class="div-footetr-nav clearfix">
-            <nav class="footer-nav">
+            <nav class="footer-nav float-right">
                 <ul>
                     <li class="top-nav nav-icon fb-icon"><a class="icon-facebook" href="#"></a></li>
                     <li class="top-nav"><a href="#">En</a></li>
