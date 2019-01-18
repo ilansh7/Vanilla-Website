@@ -16,6 +16,7 @@ header {
     
 }
 
+
 nav {
     color: white;
     font-size: 0.7em;
@@ -28,6 +29,7 @@ nav.main-nav, nav.footer-nav {
 nav.main-nav {
     padding: 1em;
     margin-top: 0.8em;
+    float: right;
 }
 nav.footer-nav {
     padding: 0.25em 3em;
@@ -43,7 +45,7 @@ nav > ul, nav > ul > li {
 	display: inline; 
 	/*width: 250px;*/
 }
-nav > ul > li.top-nav > a, nav > ul > li.dropdown > a {
+nav > ul > li > a { /*, nav > ul > li.top-nav > a, nav > ul > li.dropdown > a {*/
     /*width: 13.5%; /*120px*/
     width: auto;
     padding: 0 0.6em;
@@ -71,13 +73,33 @@ nav > ul > li.fb-icon > a {
     margin-top: 0.25em;
     margin-left: 0.4em;
 }
-/*nav > ul > li.top-nav > a, nav > ul > li.dropdown > a {
-    width: 8em; /*120px*/
-    /* font-size: 1em; */
-    /*left: 20px;*/
-    /*display: block;* /
+
+.dropdown {
+    position: relative;
 }
-nav > ul > li > a {
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    right: 0;
+    text-align: right;
+    /* left: 100%;
+    top: 0; */
+    background-color:#909090;
+    margin: 0.7em;
+    box-shadow: 0.25em 0.25em 0.25em 0em rgba(0,0,0,0.3);
+    text-decoration: none;
+    color: whitesmoke;
+}
+.dropdown:hover > .dropdown-content {
+    display: inline-block;
+    font-size: 1em;
+    width: 7em;
+    padding: 0.6em;
+    /* top: 0;
+    width: inherit; */
+ } 
+/*nav > ul > li > a {
     width: 200px;
     color: white;
     text-decoration: none;
@@ -89,24 +111,9 @@ nav > ul > li > a {
     /*border-radius: 10%;* /
 }
 
-.dropdown {
-    position: relative;
-  }
+
   
-  .dropdown-content {
-    position: absolute;
-    display: none;
-    /* right: 0; * /
-    left: 100%;
-    top: 0;
-    box-shadow: 0.25em 0.25em 0.25em 0em rgba(0,0,0,0.3);
-  }
-  
-  .dropdown:hover > .dropdown-content {
-    display: block;
-    top: 0;
-    width: inherit;
- } */
+ */
 
 .div-nav, .div-footetr-nav {
     background-color:#909090;
@@ -207,6 +214,7 @@ section {
     width: 85%;
     /* size: 5px; */
 }
+
 footer {
 
 }
@@ -281,19 +289,54 @@ p.float-left {
 
 }
 
-.contact-form {
+.contact-form, .contact-details > div {
     /* background-color: rgba(192, 192, 192, 0.6); */
     border: 2px solid rgb(224,224,224);
     border-top-right-radius: 10%;
     text-align: right;
 }
-.contact-form > p {
+.contact-details {
+    padding-left: 200px;
+}
+.contact-form > h3, .contact-details h3 {
+    padding: 0.5em 1em 0 0;
+}
+.contact-form > p, .contact-details p {
     font-size: 60%;
+    padding: 0.3em 1em 0 0;
+}
+.contact-text {
+    padding: 0.5em;
+    width: 90%;
+    height: 25%;
+    right: 4%;
+    top: 70%;
+    color: #fff;
+    background-color: rgba(192, 192, 192, 0.6);
+    border-bottom-right-radius: 10%;
+    text-align: right;
+    font-size: 50%;
 }
 
 .main-div {
     width: 100%;
     padding-top: 1em;
+}
+
+.page-header > p {
+    margin: 0.5em;
+    padding-right: 0.5em;
+}
+.page-header > hr {
+    padding: 0.5em;
+    border-top: 0.1em solid rgb(224,224,224);
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    width: 85%;
+    float: right;
+    margin: 0 1em 0 10em;
+    /* size: 5px; */
 }
 
 .form-frame {
@@ -329,10 +372,11 @@ input[type="hidden"], input[type="email"],
     width: 67%;
 }
 input[type="button"], input[type="submit"] {
+    background-image: linear-gradient(to bottom right, rgb(10,162,227), rgb(2,82,139));
+    border-top-right-radius: 0.25em;
     margin: 0.6em 1.25em 0.6em 0;
     padding: 0.3em;
     width: 5em;
-    border-radius: 0.25em;
     float: left;
 }
 textarea {
@@ -376,7 +420,7 @@ label.column {
  }
 
 .row-frame {
-    padding: 10px;
+    padding: 2px 0.6em;
     display: block;
  }
 
@@ -449,7 +493,9 @@ legend {
     height: 1.5em;
     display: block;
 }
-
+.col-wd-100 {
+    width: 100%;
+}
 .col-wd-50 {
     width: 50%;
 }
