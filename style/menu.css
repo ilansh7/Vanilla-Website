@@ -1,0 +1,147 @@
+nav {
+	color: white;
+	font-size: 0.7em;
+	/* width: 25%;
+	float: left; */
+}
+nav.main-nav, nav.footer-nav {
+	width: 100%;
+}
+nav.main-nav {
+	padding: 1em;
+	/* margin-top: 0.8em;
+	float: right; */
+}
+nav.footer-nav {
+	padding: 0.25em 3em;
+	font-size: 60%;
+	/* margin-bottom: 0.8em; */
+}
+nav > ul {
+	padding: 0;
+	margin: 0;
+}
+nav > ul, nav > ul > li {
+	list-style: none;
+	display: inline; 
+	/*width: 250px;*/
+}
+nav > ul > li.nav-icon > a, nav > ul > li.fb-icon > a {
+	/*width: 3.5%; /*120px*/
+	border-right: initial;
+}
+nav > ul > li > a { /*, nav > ul > li.top-nav > a, nav > ul > li.dropdown > a {*/
+	/*width: 13.5%; /*120px*/
+	width: auto;
+	padding: 0 0.6em;
+	/* font-size: 1em; */
+	/* float: right; */
+	border-right: 2px solid #c0c0c0;
+	text-decoration: none;
+	color: whitesmoke;
+	/*left: 20px;*/
+	/*display: block;*/
+}
+nav.dropdown-content > ul > li > a {
+	border-right: none;
+	/* width: 9em; */
+}
+nav > ul > li > a:hover, .dropdown:hover > a, p.float-left > a:hover {
+	background-color: #000;
+	/* color: white; */
+}
+nav > ul > li.nav-active > a {
+	background-color: lightseagreen;
+	color: black;
+}
+/* nav > ul > li.nav-icon > a, nav > ul > li.fb-icon > a {
+	/*width: 3.5%; /*120px* /
+	border-right: initial;
+} */
+nav > ul > li.fb-icon > a {
+	margin-top: 0.25em;
+	margin-left: 0.4em;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	position: absolute;
+	display: none;
+	right: 0;
+	text-align: right;
+	z-index: 100;
+	top: 0.5em;
+	/* left: 100%;
+	top: 0; */
+	background-color:#909090;
+	margin: 0.7em 0;
+	box-shadow: 0.25em 0.25em 0.25em 0em rgba(0,0,0,0.3);
+	text-decoration: none;
+	color: whitesmoke;
+}
+.dropdown:hover > .dropdown-content {
+	display: inline-block;
+	font-size: 1em;
+	/* width: 7em; */
+	padding: 0.6em;
+	/* top: 0;*/
+	width: auto; 
+ } 
+/*nav > ul > li > a {
+	width: 200px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.8em; /*10px*/
+	/*color: white;*/
+	/*border: 1px solid white;*/
+	/*background-color: #333;*/
+	/*border-radius: 10%;* /
+}
+ */
+
+.div-nav, .div-footetr-nav {
+	background-color:#909090;
+}
+.div-nav-logo {
+	width: 12%;
+	/* background-image: url(../images/paz_logo.png); */
+}
+/* .div-nav-logo > a {
+	display: inline-block;
+	width: 120px; /*142px;* /
+	height: 78px; /*93px;* / 
+	position: relative;
+	bottom: -1em;
+	background: url(../images/paz_logo.png) no-repeat 0 0;
+	background-size: 100% 100%;
+} */
+.div-nav-logo > img {
+	display: inline-block;
+	width: 90%; /*142px;*/
+	height: 90%x; /*93px;*/ 
+	position: relative;
+	bottom: -1.25em;
+	/* background: url(../images/paz_logo.png) no-repeat 0 0;
+	background-size: 100% 100%; */
+}
+/* .div-nav-logo > img {
+	top: 10%
+}
+.div-nav-logo > a > img {
+	top: 10%
+} */
+.div-nav-content {
+	width: 88%;
+}
+
+.icon-facebook {
+	width: 18px;
+	height: 18px;
+	background: url(../images/fb_icon.png) no-repeat 0 0; 
+	border-right: initial;
+}
+

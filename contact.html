@@ -2,201 +2,208 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style/style.css">
-    <!-- <link rel="stylesheet" href="style/vanilla-menu.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/paz_logo.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+	<!-- <link rel="stylesheet" href="style/style.css"> -->
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/menu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+		crossorigin="anonymous">
+	<link rel="shortcut icon" href="images/paz_logo.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 
-    <script src="scripts/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
-    <title>Vanilla Website</title>
+	<script src="scripts/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+	<title>Vanilla Website</title>
 </head>
 
 <body>
-    <header>
-        <h1>Vanilla Website : Contact Page</h1> <!-- alert(obj.a(5)) -->
-    </header>
-    <div class="div-nav clearfix">
-        <div class="div-nav-logo float-right">
-            <img src="images/paz_logo.png" alt="paz logo">
-            <!-- <a class="logo-imag" href="#">
-                <img src="images/paz_logo.png" alt="paz logo">
-            </a> -->
-        </div>
-        <div class="div-nav-content float-right clearfix">
-            <nav class="main-nav">
-                <ul>
-                    <li class="top-nav nav-icon"><a href="index.html"><i class="fa fa-fw fa-home"></i></a></li>
-                    <li class="dropdown top-nav">
-                        <a href="about.html">אודות</a>
-                        <nav class="dropdown-content">
-                            <ul>
-                            <li><a href="#">אודות</a></li>
-                            <li><a href="#">היסטוריה</a></li>
-                            <li><a href="#">חזון וערכים</a></li>
-                            <li><a href="#">מבנה הקבוצה</a></li>
-                            <li><a href="#">חברי דירקטוריון</a></li>
-                            <li><a href="#">הנהלת הקבוצה</a></li>
-                            <li><a href="#">פרסים והוקרה</a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <li class="dropdown top-nav"><a href="#">חטיבות</a>
-                        <nav class="dropdown-content">
-                        <ul>
-                            <li><a href="#">חטיבות</a></li>
-                            <li><a href="#">קמעונאות ומסחר</a></li>
-                            <li><a href="#">תעשיות ישירותים</a></li>
-                            <li><a href="#">זיקוק</a></li>
-                        </ul>
-                        </nav>
-                    </li>
-                    <li class="dropdown top-nav"><a href="#">אחריות תאגידית</a>
-                        <nav class="dropdown-content">
-                            <ul>
-                                <li><a href="#">אחריות תאגידית</a></li>
-                                <li><a href="#">הקוד האתי</a></li>
-                                <li><a href="#">מעורבות חברתית</a></li>
-                                <li><a href="#">נגישות</a></li>
-                                <li><a href="#">איכות הסביבה ובטיחות</a></li>
-                                <li><a href="#">דירוג מעלה</a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <li class="dropdown top-nav"><a href="#">קשרי משקיעים</a>
-                        <nav class="dropdown-content">
-                            <ul>
-                                <li><a href="#">פרופיל חברה</a></li>
-                                <li><a href="#">דו"חות כספיים</a></li>
-                                <li><a href="#">כלים למשקיע</a></li>
-                                <li><a href="#">נתוני מניה</a></li>
-                                <li><a href="#">אסיפות כלליות</a></li>
-                            </ul>
-                        </nav>                    
-                    </li>
-                    <li class="dropdown top-nav"><a href="#">התחנות שלנו</a>
-                        <nav class="dropdown-content">
-                            <ul>
-                                <li><a href="#">התחנות שלנו</a></li>
-                                <li><a href="#">נגישות מתחמי פז</a></li>
-                                <li><a href="#">רשימת תחנות</a></li>
-                                <li><a href="#">מועדונים</a></li>
-                            </ul>
-                        </nav>
-                      </li>
-                    <li class="dropdown top-nav"><a href="#">קריירה</a>
-                        <nav class="dropdown-content">
-                            <ul>
-                                <li><a href="#">לעבוד בפז</a></li>
-                                <li><a href="#">ניהול תחנות פז</a></li>
-                                <li><a href="#">קריירה</a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <li class="dropdown top-nav"><a href="mailto:info@site.com?subject=Navigation Menu - Ex3 by Ilan Shchori">חדשות ומדיה</a>
-                        <nav class="dropdown-content">
-                            <ul>
-                                <li><a href="#">פרסומות</a></li>
-                                <li><a href="#">הודעות לעיתונות</a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!-- <div class="clearfix"></div> -->
-    <div class="main-div">
-        <div class="page-header col-wd-100 float-left clearfix">
-            <p class="float-right">צור קשר</p>
-            <hr>
-        </div>
-        <div class="col-wd-100 float-left">
-            <section class="section-content float-left col-wd-50 clearfix">
-                <div class="section-content contact-details col-wd-100 float-left">
-                    <div class="col-wd-50 float-right">
-                        <h3 class="col-wd-100">פרטי יצירת קשר</h3>
-                        <p class="heb-text-justifsy col-wd-100">פרטי יצירת קשר
-                            <br>פז חברת נפט בע"מ<br>
-                                יורו פארק, בניין הולנד<br>
-                                קיבוץ יקום 60972<br>
-                                טל. שירות לקוחות 1-800-774-774<br>
-                                פקס.09-8641714<br></p>
-                        <div class="div-spacer-10"></div>
-                    </div>
-                </div>
-                <div class="div-spacer-16 float-left col-wd-100"></div>
-                <div class="section-content contact-details col-wd-100 float-left">
-                    <div class="col-wd-50 float-right">
-                        <h3 class="col-wd-100">עוד בפז</h3>
-                        <p class="heb-text-justifsy col-wd-100">
-                            <br>ליצירת קשר עם דוברות פז<br>
-                            לחצו כאן>><br><br>
-                            רוצים לעבוד בפז?<br>
-                            לחצו כאן>> <br></p>
-                        <div class="div-spacer-10"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-content contact-form float-right col-wd-50">
-                <h3 class="float-right1">צור קשר</h3>
-                <p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</p>
-                <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
-                <form class="form-frame clearfix">
-                    <div class="row-frame clearfix">
-                        <label class="column" for="fName"><span class="astrix">&nbsp;*&nbsp;</span>שם פרטי :</label>
-                        <input class="column" type="text" name="fName" id="fName" required>
-                    </div>
-                    <div class="row-frame clearfix">
-                        <label class="column" for="lName"><span class="astrix">&nbsp;*&nbsp;</span>שם משפחה :</label>
-                        <input class="column" type="text" name="lName" id="lName" required>
-                    </div>
-                    <div class="row-frame clearfix">
-                        <label class="column" for="phone"><span class="astrix">&nbsp;*&nbsp;</span>טלפון :</label>
-                        <input class="column" type="tel" name="phone" id="phone" required>
-                    </div>
-                    <div class="row-frame clearfix">
-                        <label class="column" for="mail"><span class="astrix">&nbsp;*&nbsp;</span>דוא"ל :</label>
-                        <input class="column" type="email" name="mail" id="mail" required>
-                    </div>
-                    <div class="row-frame clearfix">
-                        <!-- <label class="column" for="textarea">TextArea :</label> -->
-                        <textarea class="column" name="msg" id="msg" rows="6" placeholder="תוכן הפניה"></textarea>
-                    </div>
-                    <!--<div class="row-frame hidden">
-                        <label class="column" for="hidden">Hidden :</label>
-                        <input class="column" type="hidden" name="hidden" id="hidden" value="123456">
-                    </div>-->
-                    <div class="row-frame">
-                        <input type="submit" class="float-left" value="שלח">
-                    </div>
-                </form>
-            </section>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-    <footer>
-        <div class="div-footetr-nav clearfix">
-            <nav class="footer-nav float-right">
-                <ul>
-                    <li class="top-nav nav-icon fb-icon"><a class="icon-facebook" href="#"></a></li>
-                    <li class="top-nav"><a href="#">En</a></li>
-                    <li class="top-nav"><a href="index.html">עמוד הבית</a></li>
-                    <li class="top-nav"><a href="#">מחירונים</a></li>
-                    <li class="top-nav"><a href="#">קריירה</a></li>
-                    <li class="top-nav"><a href="#">תנאי שימוש</a></li>
-                    <li class="top-nav"><a href="#">נגישות</a></li>
-                    <li class="top-nav"><a href="#">מפת אתר</a></li>
-                    <li class="top-nav"><a href="contact.html">צור קשר</a></li>
-                    <li class="top-nav"><a href="#">הודעות והליכים משפטים</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+	<header>
+		<h1>Vanilla Website : Contact Page</h1> <!-- alert(obj.a(5)) -->
+	</header>
+	<div class="div-nav clearfix">
+			<div class="div-search col-wd-100">
+				<div class="col-wd-30 float-left">
+					<input type="text" name="txtSearch" id="txtSearch" placeholder="רשום מילת חיפוש">
+					<img id="search_button" src="images/search_button.png" alt="search button">
+				</div>
+			</div>
+			<div class="div-nav-logo float-right">
+			<img src="images/paz_logo.png" alt="paz logo">
+			<!-- <a class="logo-imag" href="#">
+				<img src="images/paz_logo.png" alt="paz logo">
+			</a> -->
+		</div>
+		<div class="div-nav-content float-right clearfix">
+			<nav class="main-nav">
+				<ul>
+					<li class="top-nav nav-icon"><a href="index.html"><i class="fa fa-fw fa-home"></i></a></li>
+					<li class="dropdown top-nav">
+						<a href="#">אודות</a>
+						<nav class="dropdown-content">
+							<ul>
+								<li><a href="about.html">אודות</a></li><br>
+								<li><a href="#">היסטוריה</a></li><br>
+								<li><a href="#">חזון וערכים</a></li><br>
+								<li><a href="#">מבנה הקבוצה</a></li><br>
+								<li><a href="#">חברי דירקטוריון</a></li>
+								<li><a href="#">הנהלת הקבוצה</a></li>
+								<li><a href="#">פרסים והוקרה</a></li>
+							</ul>
+						</nav>
+					</li>
+					<li class="dropdown top-nav"><a href="#">חטיבות</a>
+						<nav class="dropdown-content">
+							<ul>
+								<li><a href="#">חטיבות</a></li>
+								<li><a href="#">קמעונאות ומסחר</a></li>
+								<li><a href="#">תעשיות ישירותים</a></li>
+								<li><a href="#">זיקוק</a></li>
+							</ul>
+						</nav>
+					</li>
+					<li class="dropdown top-nav"><a href="#">אחריות תאגידית</a>
+						<nav class="dropdown-content">
+							<ul>
+								<li><a href="#">אחריות תאגידית</a></li>
+								<li><a href="#">הקוד האתי</a></li>
+								<li><a href="#">מעורבות חברתית</a></li>
+								<li><a href="#">נגישות</a></li>
+								<li><a href="#">איכות הסביבה ובטיחות</a></li>
+								<li><a href="#">דירוג מעלה</a></li>
+							</ul>
+						</nav>
+					</li>
+					<li class="dropdown top-nav"><a href="#">קשרי משקיעים</a>
+						<nav class="dropdown-content">
+							<ul>
+								<li><a href="#">פרופיל חברה</a></li>
+								<li><a href="#">דו"חות כספיים</a></li>
+								<li><a href="#">כלים למשקיע</a></li>
+								<li><a href="#">נתוני מניה</a></li>
+								<li><a href="#">אסיפות כלליות</a></li>
+							</ul>
+						</nav>					
+					</li>
+					<li class="dropdown top-nav"><a href="#">התחנות שלנו</a>
+						<nav class="dropdown-content">
+							<ul>
+								<li><a href="#">התחנות שלנו</a></li>
+								<li><a href="#">נגישות מתחמי פז</a></li>
+								<li><a href="#">רשימת תחנות</a></li>
+								<li><a href="#">מועדונים</a></li>
+							</ul>
+						</nav>
+					  </li>
+					<li class="dropdown top-nav"><a href="#">קריירה</a>
+						<nav class="dropdown-content">
+							<ul>
+								<li><a href="#">לעבוד בפז</a></li>
+								<li><a href="#">ניהול תחנות פז</a></li>
+								<li><a href="#">קריירה</a></li>
+							</ul>
+						</nav>
+					</li>
+					<li class="dropdown top-nav"><a href="mailto:info@site.com?subject=Navigation Menu - Ex3 by Ilan Shchori">חדשות ומדיה</a>
+						<nav class="dropdown-content">
+							<ul>
+								<li><a href="#">פרסומות</a></li>
+								<li><a href="#">הודעות לעיתונות</a></li>
+							</ul>
+						</nav>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- <div class="clearfix"></div> -->
+	<div class="main-div">
+		<div class="page-header col-wd-100 float-left clearfix">
+			<p class="float-right">צור קשר</p>
+			<hr>
+		</div>
+		<div class="col-wd-100 float-left">
+			<section class="section-content float-left col-wd-50 clearfix">
+				<div class="section-content contact-details col-wd-100 float-left">
+					<div class="col-wd-50 float-right">
+						<h3 class="col-wd-100">פרטי יצירת קשר</h3>
+						<p class="heb-text-justifsy col-wd-100">פרטי יצירת קשר
+							<br>פז חברת נפט בע"מ<br>
+								יורו פארק, בניין הולנד<br>
+								קיבוץ יקום 60972<br>
+								טל. שירות לקוחות 1-800-774-774<br>
+								פקס.09-8641714<br></p>
+						<div class="div-spacer-10"></div>
+					</div>
+				</div>
+				<div class="div-spacer-16 float-left col-wd-100"></div>
+				<div class="section-content contact-details col-wd-100 float-left">
+					<div class="col-wd-50 float-right">
+						<h3 class="col-wd-100">עוד בפז</h3>
+						<p class="heb-text-justifsy col-wd-100">
+							<br>ליצירת קשר עם דוברות פז<br>
+							לחצו כאן>><br>
+							רוצים לעבוד בפז?<br>
+							לחצו כאן>> <br></p>
+						<div class="div-spacer-10"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section-content contact-form float-right col-wd-50">
+				<h3 class="float-right1">צור קשר</h3>
+				<p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</p>
+				<p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
+				<form class="form-frame clearfix">
+					<div class="row-frame clearfix">
+						<label class="column" for="fName"><span class="astrix">&nbsp;*&nbsp;</span>שם פרטי :</label>
+						<input class="column" type="text" name="fName" id="fName" required>
+					</div>
+					<div class="row-frame clearfix">
+						<label class="column" for="lName"><span class="astrix">&nbsp;*&nbsp;</span>שם משפחה :</label>
+						<input class="column" type="text" name="lName" id="lName" required>
+					</div>
+					<div class="row-frame clearfix">
+						<label class="column" for="phone"><span class="astrix">&nbsp;*&nbsp;</span>טלפון :</label>
+						<input class="column" type="tel" name="phone" id="phone" required>
+					</div>
+					<div class="row-frame clearfix">
+						<label class="column" for="mail"><span class="astrix">&nbsp;*&nbsp;</span>דוא"ל :</label>
+						<input class="column" type="email" name="mail" id="mail" required>
+					</div>
+					<div class="row-frame clearfix">
+						<!-- <label class="column" for="textarea">TextArea :</label> -->
+						<textarea class="column" name="msg" id="msg" rows="6" placeholder="תוכן הפניה"></textarea>
+					</div>
+					<!--<div class="row-frame hidden">
+						<label class="column" for="hidden">Hidden :</label>
+						<input class="column" type="hidden" name="hidden" id="hidden" value="123456">
+					</div>-->
+					<div class="row-frame">
+						<input type="submit" class="float-left" value="שלח">
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<footer>
+		<div class="div-footetr-nav clearfix">
+			<nav class="footer-nav float-right">
+				<ul>
+					<li class="top-nav nav-icon fb-icon"><a class="icon-facebook" href="#"></a></li>
+					<li class="top-nav"><a href="#">En</a></li>
+					<li class="top-nav"><a href="index.html">עמוד הבית</a></li>
+					<li class="top-nav"><a href="#">מחירונים</a></li>
+					<li class="top-nav"><a href="#">קריירה</a></li>
+					<li class="top-nav"><a href="#">תנאי שימוש</a></li>
+					<li class="top-nav"><a href="#">נגישות</a></li>
+					<li class="top-nav"><a href="#">מפת אתר</a></li>
+					<li class="top-nav"><a href="contact.html">צור קשר</a></li>
+					<li class="top-nav"><a href="#">הודעות והליכים משפטים</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
 </body>
 
 </html>
